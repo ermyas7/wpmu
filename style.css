@@ -112,7 +112,8 @@ body {
         visibility: visible;
         opacity: 1; }
   .content__error {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     margin-bottom: 1.5rem;
     color: #F53C3B; }
   .content__select {
@@ -190,3 +191,8 @@ body {
 
 .color-red {
   color: #F53C3B; }
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s; }

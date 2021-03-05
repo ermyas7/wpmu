@@ -167,7 +167,8 @@ body{
     }
 
     &__error{
-        display: none;
+        visibility: hidden;
+        opacity: 0;
         margin-bottom: 1.5rem;
         color: $color-secondary;
     }
@@ -285,4 +286,10 @@ body{
 
 .color-red{
     color: $color-secondary;
+}
+
+.show{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
 }

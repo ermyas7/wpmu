@@ -21,9 +21,12 @@
                 
                 if(!validateEmail(evt.target.value)){
                     document.getElementById('email-extra').classList.add('color-red');
-                    this.classList.add('content__input--invalid');  
+                    this.classList.add('content__input--invalid');;
+                    document.getElementById('email-error').classList.add('show');  
                 }else{
-                    this.classList.remove('content__input--invalid')
+                    this.classList.remove('content__input--invalid');
+                    document.getElementById('email-extra').classList.remove('color-red');
+                    document.getElementById('email-error').classList.remove('show'); 
                 }
             }
         }else{
