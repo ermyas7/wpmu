@@ -42,13 +42,15 @@
                     document.getElementById('email-invalid').classList.add('content__eye-hidden'); 
                 }
             }else if(name === 'password'){
-                document.getElementById('password-extra').classList.add('content__extra--top__show');
+                document.getElementById('password-extra-top').classList.add('content__extra--top__show');
                 if(value.length < 8){
                     this.classList.add('content__input--invalid');
                     document.getElementById('password-extra').classList.add('color-red');
+                    document.getElementById('password-extra-top').classList.add('color-red');
                 }else{
                     this.classList.remove('content__input--invalid');
                     document.getElementById('password-extra').classList.remove('color-red');
+                    document.getElementById('password-extra-top').classList.remove('color-red');
                 }
             }
         }else{
@@ -57,6 +59,8 @@
             }else if(name === 'email'){
                 document.getElementById('email-extra').classList.remove('content__extra--top__show');
                 this.classList.remove('content__input--invalid');
+            }else if(name==='password'){
+                document.getElementById('password-extra-top').classList.remove('content__extra--top__show');
             }
 
         }
