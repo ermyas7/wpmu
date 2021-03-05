@@ -105,10 +105,16 @@ body{
                 position: absolute;
                 right: 1.7rem;
                 top: 1.7rem;
-
-                color: $color-dark;
             }
         }
+    }
+
+     &__hide {
+        color: $color-grey-dark-1;
+    }
+
+    &__show{
+        color: $color-dark;
     }
 
     &__input{
@@ -119,7 +125,8 @@ body{
         border-radius: .4rem;
         font-size: 1.6rem;
 
-        ::placeholder{
+
+        &::placeholder{
             color: $color-grey-dark-1;
             font-size: 1.6rem;
         }
@@ -129,6 +136,37 @@ body{
             order:1px solid $color-grey-light-1;
         }
     }
+
+    &__extra{
+        font-weight: 300;
+        color: $color-grey-dark-1;
+        font-size: 1.2rem;
+
+        &--top{
+            position: absolute;
+            top: -.8rem;
+            left: 1rem;
+            z-index: 10;
+            background-color: $color-grey-light-2;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+
+            &__show{
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
+    }
+
+    &__error{
+        display: none;
+        margin-bottom: 1.5rem;
+        color: $color-secondary;
+    }
+
+
 
     &__select{
         margin-bottom: 1.5rem;
@@ -154,18 +192,6 @@ body{
                 color: $color-grey-dark-1;
                 background-color: $color-grey-light-2;
             }
-
-        }
-    }
-
-    &__error{
-
-    }
-
-    &__extra{
-        display: none;
-
-        &--top{
 
         }
     }
@@ -210,6 +236,11 @@ body{
     color: $color-grey-dark-1;
     border: none;
     border-radius: .4rem;
+
+    &--active{
+        background-color: $color-primary;
+        color: $color-white;
+    }
 }
 
 .text{

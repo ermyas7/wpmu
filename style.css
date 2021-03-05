@@ -73,8 +73,11 @@ body {
       .content__form__group i {
         position: absolute;
         right: 1.7rem;
-        top: 1.7rem;
-        color: #333; }
+        top: 1.7rem; }
+  .content__hide {
+    color: #8F8F8F; }
+  .content__show {
+    color: #333; }
   .content__input {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -82,12 +85,32 @@ body {
     background-color: inherit;
     border-radius: .4rem;
     font-size: 1.6rem; }
-    .content__input ::placeholder {
+    .content__input::placeholder {
       color: #8F8F8F;
       font-size: 1.6rem; }
     .content__input:focus {
       outline: none;
       order: 1px solid #EDEDED; }
+  .content__extra {
+    font-weight: 300;
+    color: #8F8F8F;
+    font-size: 1.2rem; }
+    .content__extra--top {
+      position: absolute;
+      top: -.8rem;
+      left: 1rem;
+      z-index: 10;
+      background-color: #F9F9F9;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s; }
+      .content__extra--top__show {
+        visibility: visible;
+        opacity: 1; }
+  .content__error {
+    display: none;
+    margin-bottom: 1.5rem;
+    color: #F53C3B; }
   .content__select {
     margin-bottom: 1.5rem; }
     .content__select select {
@@ -104,8 +127,6 @@ body {
       .content__select select option {
         color: #8F8F8F;
         background-color: #F9F9F9; }
-  .content__extra {
-    display: none; }
   .content__btn {
     margin-top: 2rem;
     margin-bottom: 3rem; }
@@ -135,6 +156,9 @@ body {
   color: #8F8F8F;
   border: none;
   border-radius: .4rem; }
+  .btn--active {
+    background-color: #286FF9;
+    color: #fff; }
 
 .text {
   font-size: 1.7rem;

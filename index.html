@@ -23,10 +23,11 @@
                 </h3>
                 <form class="content__form">
                     <div class="content__form__group">
+                        <span class="content__extra content__extra--top" id="name-extra">Your name</span>
                         <input type="text" class="content__input" name="name" placeholder="Your name">
                     </div>
                     <div class="content__form__group">
-                        <span class="content__error content__extra content__extra--top">Email address</span>
+                        <span class="content__extra content__extra--top" id="email-extra">Email address</span>
                         <input type="text" class="content__input" name="email" placeholder="Email address">
                     <span class="content__error content__extra">Please enter a valid email address</span>
                     </div>
@@ -40,11 +41,11 @@
                         </select>
                     </div>
                     <div class="content__form__group">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-eye content__hide"></i>
                         <input type="password" class="content__input" name="password" placeholder="Password">
-                    <span class="content__error content__extra">Minimum 8 characters</span>
+                    <span class="content__info content__extra">Minimum 8 characters</span>
                     </div>
-                    <button class="content__btn btn">Next</button>
+                    <button class="content__btn btn btn--active" id="submit">Next</button>
                 </form>
                 <p class="content__privacy">
                     By clicking the "Next" button, you agree to creating a free account, and to <a href="#" class="content__privacy__link">Terms of Service</a>
@@ -63,4 +64,5 @@
         </header>
     </div>
 </body>
+<script src="./index.js"></script>
 </html>
