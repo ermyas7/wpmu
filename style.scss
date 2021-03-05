@@ -1,1 +1,247 @@
-$color-blue: #286FF9;
+$color-primary: #286FF9;
+$color-secondary: #F53C3B;
+
+$color-grey-dark-1: #8F8F8F;
+$color-grey-light-1: #EDEDED;
+$color-grey-light-2: #F9F9F9;
+
+$color-white: #fff;
+$color-dark: #333;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; //1rem = 10px
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light-2;
+    position: relative;
+
+    &__step{
+        font-size: 1.7rem;
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        display: flex;
+        align-items: center;
+        color: $color-dark;
+    }
+
+    &__dot{
+        display: inline-block;
+        background-color: $color-dark;
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        position: relative;
+
+        &::before{
+            display: inline-block;
+            content: '';
+            background-color: $color-grey-dark-1;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 1rem;
+        }
+
+        &::after{
+            display: inline-block;
+            position: absolute;
+            content: '';
+            background-color: $color-grey-dark-1;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 50%;
+            left: 2rem;
+        }
+    }
+
+    &__card{
+        width: 40%;
+        margin-top: 3rem;
+    }
+
+    &__heading{
+        margin-bottom: 4rem;
+    }
+
+    &__heading-sub{
+        margin-bottom: 3.5rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+        &__group{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            i{
+                position: absolute;
+                right: 1.7rem;
+                top: 1.7rem;
+
+                color: $color-dark;
+            }
+        }
+    }
+
+    &__input{
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border:1px solid $color-grey-light-1;
+        background-color: inherit;
+        border-radius: .4rem;
+        font-size: 1.6rem;
+
+        ::placeholder{
+            color: $color-grey-dark-1;
+            font-size: 1.6rem;
+        }
+
+        &:focus{
+            outline: none;
+            order:1px solid $color-grey-light-1;
+        }
+    }
+
+    &__select{
+        margin-bottom: 1.5rem;
+        span{
+
+        }
+
+        select{
+            border-radius: .4rem;
+            font-size: 1.6rem;
+            padding: 1rem;
+            width: 100%;
+            color: $color-grey-dark-1;
+            background-color: $color-grey-light-2;
+            border:1px solid $color-grey-light-1;
+
+            &:focus{
+                outline: none;
+                order:1px solid $color-grey-light-1;
+            }
+            
+            option{
+                color: $color-grey-dark-1;
+                background-color: $color-grey-light-2;
+            }
+
+        }
+    }
+
+    &__error{
+
+    }
+
+    &__extra{
+        display: none;
+
+        &--top{
+
+        }
+    }
+
+    &__btn{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__privacy{
+        color: $color-dark;
+        line-height: 1.7;
+
+        &__link{
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.header{
+    background-color: $color-primary;
+    width: 35vw;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__heading{
+        margin-bottom: 7rem;
+        text-align: center;
+    }
+    
+}
+
+.btn{
+    padding: 1.5rem;
+    background-color: $color-grey-light-1;
+    color: $color-grey-dark-1;
+    border: none;
+    border-radius: .4rem;
+}
+
+.text{
+    font-size: 1.7rem;
+    color: $color-white;
+    letter-spacing: 1px;
+}
+
+
+.heading-primary{
+    font-size: 3.2rem;
+
+    &--dark{
+        font-weight: 600;
+        color: $color-dark;
+    }
+
+    &--light{
+        font-weight: 600;
+        color: $color-white;
+    }
+}
+
+.heading-sub{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-dark;
+
+    &__link{
+        margin-left: .5rem;
+        color: $color-primary;
+        font-weight: 500;
+        font-size: 1.9rem;
+    }
+}

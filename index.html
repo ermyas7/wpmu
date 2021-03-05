@@ -5,50 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>WPMU</title>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <h1 class="heading__primary">
-                Let's Set up your account
-            </h1>
-            <h3 class="heading-sub">
-                Already have an account? <span class="heading-sub__link">Sign in</span>
-            </h3>
-            <form class="content__form">
-                <div class="content__form__control">
-                    <input type="text" class="content__input" name="name" placeholder="Your name">
-                </div>
-                <div class="content__form__control">
-                    <span class="content__error content__extra content__extra--top">Email address</span>
-                    <input type="text" class="content__input" name="email" placeholder="Email address">
-                <span class="content__error content__extra">Please enter a valid email address</span>
-                </div>
-                <div class="content__select">
-                    <span> > </span>
-                    <select name="describe" id="describe">
-                        <option value="">I would describe my user type as</option>
-                        <option value="developer">Developer</option>
-                        <option value="marketer">Marketer</option>
-                        <option value="hr">HR</option>
-                        <option value="manager">Manager</option>
-                    </select>
-                </div>
-                <div class="content__form__control">
-                    <input type="password" class="content__input" name="password" placeholder="Password">
-                <span class="content__error content__extra">Minimum 8 characters</span>
-                </div>
-                <button>Next</button>
-            </form>
-            <p class="content__privacy">
-                By clicking the "Next" button, you agree to creating a free account, and to <a href="#" class="content__privacy__link">Terms of Service</a>
-                and <a href="#" class="content__privacy__link">Privacy Policy.</a>
-            </p>
+            <div class="content__step">
+                Step 1 of 3 <span class="content__dot"></span>
+            </div>
+            <div class="content__card">
+                <h1 class="heading-primary heading-primary--dark content__heading">
+                    Let's Set up your account
+                </h1>
+                <h3 class="content__heading-sub heading-sub">
+                    Already have an account? <span class="heading-sub__link">Sign in</span>
+                </h3>
+                <form class="content__form">
+                    <div class="content__form__group">
+                        <input type="text" class="content__input" name="name" placeholder="Your name">
+                    </div>
+                    <div class="content__form__group">
+                        <span class="content__error content__extra content__extra--top">Email address</span>
+                        <input type="text" class="content__input" name="email" placeholder="Email address">
+                    <span class="content__error content__extra">Please enter a valid email address</span>
+                    </div>
+                    <div class="content__select">
+                        <select name="describe" id="describe">
+                            <option value="">I would describe my user type as</option>
+                            <option value="developer">Developer</option>
+                            <option value="marketer">Marketer</option>
+                            <option value="hr">HR</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                    </div>
+                    <div class="content__form__group">
+                        <i class="fas fa-eye"></i>
+                        <input type="password" class="content__input" name="password" placeholder="Password">
+                    <span class="content__error content__extra">Minimum 8 characters</span>
+                    </div>
+                    <button class="content__btn btn">Next</button>
+                </form>
+                <p class="content__privacy">
+                    By clicking the "Next" button, you agree to creating a free account, and to <a href="#" class="content__privacy__link">Terms of Service</a>
+                    and <a href="#" class="content__privacy__link">Privacy Policy.</a>
+                </p>
+            </div>
         </div>
 
-        <header class="content__header">
-            <h1 class="heading__primary">
+        <header class="header">
+            <h1 class="header__heading heading-primary heading-primary--light">
                 Dummy Heading
             </h1>
             <p class="header__text text">
