@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "postcss": "8.1.0"
+  },
+  "devDependencies": {
     "node-sass": "^5.0.0"
   }
 }

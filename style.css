@@ -121,7 +121,12 @@ body {
     margin-bottom: 1.5rem;
     color: #F53C3B; }
   .content__select {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    position: relative; }
+    .content__select i {
+      position: absolute;
+      right: 1.7rem;
+      top: 1.5rem; }
     .content__select select {
       border-radius: .4rem;
       font-size: 1.6rem;
@@ -129,7 +134,11 @@ body {
       width: 100%;
       color: #8F8F8F;
       background-color: #F9F9F9;
-      border: 1px solid #EDEDED; }
+      border: 1px solid #EDEDED;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: ''; }
       .content__select select:focus {
         outline: none;
         order: 1px solid #EDEDED; }

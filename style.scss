@@ -182,6 +182,12 @@ body{
 
     &__select{
         margin-bottom: 1.5rem;
+        position: relative;
+        i{
+            position: absolute;
+            right: 1.7rem;
+            top: 1.5rem; 
+        }
         span{
 
         }
@@ -194,7 +200,11 @@ body{
             color: $color-grey-dark-1;
             background-color: $color-grey-light-2;
             border:1px solid $color-grey-light-1;
-
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            
             &:focus{
                 outline: none;
                 order:1px solid $color-grey-light-1;
