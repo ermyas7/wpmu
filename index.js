@@ -42,6 +42,7 @@
                     document.getElementById('email-invalid').classList.add('content__eye-hidden'); 
                 }
             }else if(name === 'password'){
+                document.getElementById('password-extra').classList.add('content__extra--top__show');
                 if(value.length < 8){
                     this.classList.add('content__input--invalid');
                     document.getElementById('password-extra').classList.add('color-red');
