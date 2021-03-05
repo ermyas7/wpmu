@@ -33,11 +33,13 @@
                 if(!validateEmail(value)){
                     document.getElementById('email-extra').classList.add('color-red');
                     this.classList.add('content__input--invalid');;
-                    document.getElementById('email-error').classList.add('show');  
+                    document.getElementById('email-error').classList.add('show');
+                    document.getElementById('email-invalid').classList.remove('content__eye-hidden');
                 }else{
                     this.classList.remove('content__input--invalid');
                     document.getElementById('email-extra').classList.remove('color-red');
-                    document.getElementById('email-error').classList.remove('show'); 
+                    document.getElementById('email-error').classList.remove('show');
+                    document.getElementById('email-invalid').classList.add('content__eye-hidden'); 
                 }
             }else if(name === 'password'){
                 if(value.length < 8){

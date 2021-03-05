@@ -177,8 +177,6 @@ body{
         color: $color-secondary;
     }
 
-
-
     &__select{
         margin-bottom: 1.5rem;
         span{
@@ -221,6 +219,10 @@ body{
             color: $color-primary;
             font-size: 1.5rem;
         }
+    }
+
+    &__eye-hidden{
+        display: none !important;
     }
 
 }

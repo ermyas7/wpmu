@@ -144,6 +144,8 @@ body {
       text-decoration: none;
       color: #286FF9;
       font-size: 1.5rem; }
+  .content__eye-hidden {
+    display: none !important; }
 
 .header {
   background-color: #286FF9;
