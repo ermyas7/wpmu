@@ -85,6 +85,8 @@ body {
     background-color: inherit;
     border-radius: .4rem;
     font-size: 1.6rem; }
+    .content__input--invalid {
+      border: 1px solid #F53C3B; }
     .content__input::placeholder {
       color: #8F8F8F;
       font-size: 1.6rem; }
@@ -97,14 +99,16 @@ body {
     font-size: 1.2rem; }
     .content__extra--top {
       position: absolute;
-      top: -.8rem;
+      top: 8rem;
       left: 1rem;
       z-index: 10;
       background-color: #F9F9F9;
       opacity: 0;
       visibility: hidden;
-      transition: all .3s; }
+      transition: all .5s; }
       .content__extra--top__show {
+        top: -.8rem;
+        left: 1rem;
         visibility: visible;
         opacity: 1; }
   .content__error {
@@ -183,3 +187,6 @@ body {
     color: #286FF9;
     font-weight: 500;
     font-size: 1.9rem; }
+
+.color-red {
+  color: #F53C3B; }

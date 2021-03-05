@@ -125,6 +125,10 @@ body{
         border-radius: .4rem;
         font-size: 1.6rem;
 
+        &--invalid{
+            border:1px solid $color-secondary;  
+        }
+
 
         &::placeholder{
             color: $color-grey-dark-1;
@@ -144,15 +148,17 @@ body{
 
         &--top{
             position: absolute;
-            top: -.8rem;
+            top: 8rem;
             left: 1rem;
             z-index: 10;
             background-color: $color-grey-light-2;
             opacity: 0;
             visibility: hidden;
-            transition: all .3s;
+            transition: all .5s;
 
             &__show{
+                top: -.8rem;
+                left: 1rem;
                 visibility: visible;
                 opacity: 1;
             }
@@ -275,4 +281,8 @@ body{
         font-weight: 500;
         font-size: 1.9rem;
     }
+}
+
+.color-red{
+    color: $color-secondary;
 }
