@@ -163,7 +163,7 @@ body {
   color: #8F8F8F;
   border: none;
   border-radius: .4rem; }
-  .btn--active {
+  .btn--valid {
     background-color: #286FF9;
     color: #fff; }
 
