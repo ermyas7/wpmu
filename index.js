@@ -5,6 +5,7 @@
     const email = document.querySelector('input[name="email"]');
     const password = document.querySelector('input[name="password"]');
     const submit = document.getElementById('submit');
+    const eye = document.getElementById('password-visibility');
 
     function validateEmail(email) {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -40,6 +41,23 @@
         }
     }
 
+    const togglePasswordVisibility = function(evt){
+        console.log(this);
+        if(password.type==='password'){
+            password.setAttribute('type', 'text');
+            this.classList.add('content__show');
+            this.classList.remove('content__hide');
+        }else if(password.type==='text'){
+            password.setAttribute('type', 'password');
+            this.classList.add('content__hide');
+            this.classList.remove('content__show');
+        }
+    }
+
     name.addEventListener('input', handleInput);
     email.addEventListener('input', handleInput);
+    password.addEventListener('input', handleInput);
+
+    eye.addEventListener('click', togglePasswordVisibility);
+
 })();
